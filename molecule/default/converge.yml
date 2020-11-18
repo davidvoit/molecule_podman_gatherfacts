@@ -1,0 +1,8 @@
+---
+- name: Converge
+  hosts: all
+  #gather_facts: false
+  tasks:
+    - name: "Include hello-molecule"
+      include_role:
+        name: "hello-molecule"
